@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        pointer-events: auto;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainframe{
+        width: 800px;
+        height: 600px;
+        /* border: 1px solid black; */
+        border-radius: 8px;
+        outline: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #container1{
+        width: 350px;
+        height: 600px;
+        border: 1px solid;
+        border-radius:8px;
+        background-color: #2874f0;
+    }
+    #container1 #box1{
+        margin-left: 20px;
+        margin-top: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+    #container1 #box2{
+        font-size: 20px;
+        margin-top: 16px;
+        margin-left: 22px;
+        line-height: 150%;
+        color: #dbdbdb;
+    }
+    #container1 #box3{
+        display: flex;
+        justify-content: center;
+        margin-top: 220px;
+
+    }
+    #container2{
+       width: 450px;
+       height: 600px;
+       border: 1px solid white ; 
+    }
+    #container2 .details{
+        /* border: 1px solid; */
+        width: 400px;
+        height: 250px;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    /* .details{
+        border: 1px solid white;
+    } */
+    .details #box1{
+        
+        position: relative;
+        margin-top: 34px;
+        margin-left: 12px;
+        font-size: 16px;
+        
+    }
+    .details #box1 input{
+        width: 350px;
+        height: 25px;
+        font-family: Arial,sans-serif;
+        letter-spacing: 0px;
+        font-size: 20px;
+        color: #403a3a;
+        border-bottom: 2px solid #f0c4c4;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        text-decoration: none;
+    }
+    .details #box2{
+        padding: 20px;
+        color: #645353;
+        /* padding: 20px; */
+    }
+    .details #box2 p{
+        padding: 15px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .details #box2 a{
+        color: #2874f0;
+    }
+    .details #box3{
+        display: flex;
+        justify-content: center;
+    }
+    .details #box3 button{
+        width: 380px;
+        height: 50px;
+        font-size: 20px;
+        padding: 8px;
+        background-color: #fb641b;
+        border: 1px solid #fb641b;
+        border-radius: 3px;
+        transition: 0.4s ease;
+        cursor: pointer;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .details #box3 button:hover{
+        background-color: orange ;
+        transition: 0.4s ease;
+    }
+    #container2 .end{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 250px;
+        
+    }
+    #container2 .end a{
+        color: #2874f0;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+</style>
+<body>
+    <div class="mainframe" id="frame">
+        <div class="container" id="container1">
+            <div class="box" id="box1"><span><h3>Login</h3></span></div>
+            <div class="box" id="box2"><p>Get access to your <br> Orders, Wishlist and <br> Recommendations</p> </div>
+            <div class="box" id="box3">
+                <img src="/flipkar image.png" alt="flikart image">
+            </div>
+        </div>
+        <div class="container" id="container2">
+            <div class="details">
+                <div id="box1"><input type="text" name="" id="" placeholder="Enter email / Mobile number"></div>
+                <div id="box2"><p>By continuing, you agree to Flipkart's <a href="">Terms of Use</a>  and <a href="">Privacy Policy</a></p></div>
+                <div id="box3"><button> Request OTP</button></div>
+            </div>
+            <div class="end"><a href="">New to Flipkart? Create an account</a></div>
+        </div>
+    </div>
+</body>
+</html>
